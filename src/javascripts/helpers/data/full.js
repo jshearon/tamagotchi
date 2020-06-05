@@ -7,6 +7,10 @@ const setFull = (increase) => {
     full = 100;
     return full;
   }
+  if (increase + full < 0) {
+    full = 0;
+    return full;
+  }
   full += increase;
   return full;
 };
