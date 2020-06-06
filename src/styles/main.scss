@@ -6,66 +6,97 @@ $bit-font: 'Press Start 2P', cursive;
 
 html, body {
   height: 100vh;
+  margin: 0;
   font-family: $bit-font;
+  font-size: 2vh;
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 2vh 0;
+  margin: 0;
+}
+
+.fas, .fab {
+  font-size: 3rem;
 }
 
 #app {
-  width: 50vw;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
   margin: auto;
   display: grid;
-  /* grid-template-rows: [row1-start] 10% [row1-end row2-start] 40% [row2-end] [row3-start] 40% [row3-end]; */
+  grid-template-rows: [row1-start] 10% [row1-end row2-start] 45% [row2-end row3-start] 45% [row3-end];
   grid-template-columns: 50%;
   grid-template-areas: 
     "progess progess" 
     "eat play"
-    "fight sleep"
-    "pet pet";
+    "fight sleep";
 }
 
 #progress {
-  background-color: gray;
+  background-color: darkslategray;
   grid-area: progess;
 }
 
 #eat {
   background-color: blue;
   grid-area: eat;
-  text-align: right;
-  padding: 0;
-  position: relative;
-  border-radius: 30px 0 0 0;
+  padding-right: 3vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 #play {
   background-color: yellow;
   grid-area: play;
-  padding: 0;
-  border-radius: 0 30px 0 0;
+  padding-left: 3vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #fight {
-  background-color: red;
+  background-color: darkred;
   grid-area: fight;
-  text-align: right;
-  padding: 0;
-  border-radius: 0 0 0 30px;
+  padding-top: 2rem;
+  padding-right: 3vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column-reverse;
 }
 
 #sleep {
   background-color: green;
   grid-area: sleep;
+  padding-top: 2rem;
+  padding-left: 3vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column-reverse;
 }
 
 #pet {
   display: flex;
-  width: 16rem;
+  width: 24vh;
+  height: 24vh;
   flex-wrap: wrap;
   margin: auto;
   padding: 0;
-  border: 3px solid darkslategray;
+  border: 5px solid darkslategray;
   border-radius: 10%;
-  grid-area: pet;
-  transform: translateY(-125%) scale(.75, .75);
   overflow: hidden;
-  
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -6,8 +6,8 @@ const printEat = () => {
   const domString = `
     <h2>Eat</h2>
     <h4>Full Level: <span id="fullness">${full.getFull()}</span></h4>
-    <button id="healthyFood" class="roundButton"><i class="fas fa-carrot fa-2x"></i></button>
-    <button id="unhealthyFood" class="roundButton"><i class="fas fa-pizza-slice fa-2x"></i></button>
+    <button id="healthyFood" class="roundButton"><i class="fas fa-fw fa-carrot"></i></button>
+    <button id="unhealthyFood" class="roundButton"><i class="fas fa-fw fa-pizza-slice"></i></button>
   `;
   utils.printToDom('#eat', domString);
 };

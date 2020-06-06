@@ -1,26 +1,20 @@
 #eat h2, #eat h4 {
-  margin-right: 2rem;
-  color: white;
+  color: lightblue;
 }
 
 #eat button > * {
   pointer-events: none;
 }
 
-#eat button {
-  margin: 1rem 2rem 3rem 0;
-}
-
-#healthyFood {
-  transform: translate(-200%, 0%);
-}
-
-#unhealthyFood {
-  transform: translate(-200%, 0%);
-}
-
-.roundButton {
+#eat .roundButton {
   border-radius: 50%;
-  border: 0;
-  padding: 1rem;
+  border: .5rem solid lightblue;
+  background-color: darkblue;
+  padding: .75rem;
+  margin: .5rem;
+  color: lightblue;
+}
+
+#eat :nth-child(4) {
+  transform: translateX(-125%);
 }
