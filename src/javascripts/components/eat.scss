@@ -1,0 +1,25 @@
+h2, h4 {
+  margin-right: 2rem;
+}
+
+#eat button > * {
+  pointer-events: none;
+}
+
+#eat button {
+  margin: 1rem 2rem 3rem 0;
+}
+
+#healthyFood {
+  transform: translate(-200%, 0%);
+}
+
+#unhealthyFood {
+  transform: translate(-200%, 0%);
+}
+
+.roundButton {
+  border-radius: 50%;
+  border: 0;
+  padding: 1rem;
+}

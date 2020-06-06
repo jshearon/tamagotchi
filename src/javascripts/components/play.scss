@@ -1,0 +1,25 @@
+h2, h4 {
+  margin-left: 2rem;
+}
+
+#play button {
+  margin: 1rem 0 3rem 2rem;
+}
+
+#play button > * {
+  pointer-events: none;
+}
+
+#snowboard {
+  transform: translate(200%, 0%);
+}
+
+#hike {
+  transform: translate(200%, 0%);
+}
+
+.roundButton {
+  border-radius: 50%;
+  border: 0;
+  padding: 1rem;
+}

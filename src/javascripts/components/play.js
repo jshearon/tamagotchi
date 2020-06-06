@@ -1,12 +1,13 @@
 import fun from '../helpers/data/fun';
 import utils from '../helpers/utils';
+import './play.scss';
 
 const printPlay = () => {
   const domString = `
     <h2>Play</h2>
-    <h4>Full Level: <span id="fullness">${fun.getFun()}</span></h4>
-    <button id="dance">Dance</button>
-    <button id="draw">Draw</button>
+    <h4>Fun Level: <span id="funness">${fun.getFun()}</span></h4>
+    <button id="snowboard"  class="roundButton"><i class="fas fa-snowboarding fa-2x"></i></button>
+    <button id="hike" class="roundButton"><i class="fas fa-hiking fa-2x"></i></button>
   `;
   utils.printToDom('#play', domString);
 };
@@ -18,8 +19,8 @@ const addFunness = (amount) => {
 
 const playListeners = () => {
   document.querySelector('#play').addEventListener('click', (e) => {
-    if (e.target.id === 'dance') { addFunness(50); }
-    if (e.target.id === 'draw') { addFunness(2); }
+    if (e.target.id === 'snowboard') { addFunness(50); }
+    if (e.target.id === 'hike') { addFunness(2); }
   });
 };
 
