@@ -1,26 +1,20 @@
 #fight h2, #fight h4 {
-  margin-right: 2rem;
-  color: white;
+  color: rgb(252, 105, 125);
 }
 
 #fight button > * {
   pointer-events: none;
 }
 
-#fight button {
-  margin: 1rem 2rem 3rem 0;
-}
-
-#flightButton {
-  transform: translate(-200%, 50%);
-}
-
-#fightButton {
-  transform: translate(-200%, 50%);
-}
-
-.roundButton {
+#fight .roundButton {
   border-radius: 50%;
-  border: 0;
-  padding: 1rem;
+  border: .5rem solid red;
+  background-color: darkred;
+  padding: .75rem;
+  margin: .5rem;
+  color: rgb(252, 105, 125);
+}
+
+#fight :nth-child(4) {
+  transform: translateX(-125%);
 }

@@ -1,0 +1,20 @@
+#sleep h2, #sleep h4 {
+  color: rgb(93, 231, 93);
+}
+
+#sleep button > * {
+  pointer-events: none;
+}
+
+#sleep .roundButton {
+  border-radius: 50%;
+  border: .5rem solid rgb(93, 231, 93);
+  background-color: darkolivegreen;
+  margin: .5rem;
+  padding: .75rem;
+  color: rgb(93, 231, 93);
+}
+
+#sleep :nth-child(4) {
+  transform: translateX(125%);
+}
