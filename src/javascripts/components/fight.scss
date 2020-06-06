@@ -1,22 +1,22 @@
-#eat h2, #eat h4 {
+#fight h2, #fight h4 {
   margin-right: 2rem;
   color: white;
 }
 
-#eat button > * {
+#fight button > * {
   pointer-events: none;
 }
 
-#eat button {
+#fight button {
   margin: 1rem 2rem 3rem 0;
 }
 
-#healthyFood {
-  transform: translate(-200%, 0%);
+#flightButton {
+  transform: translate(-200%, 50%);
 }
 
-#unhealthyFood {
-  transform: translate(-200%, 0%);
+#fightButton {
+  transform: translate(-200%, 50%);
 }
 
 .roundButton {
