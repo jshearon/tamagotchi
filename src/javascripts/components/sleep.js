@@ -1,6 +1,7 @@
 import energy from '../helpers/data/energy';
 import utils from '../helpers/utils';
 import './sleep.scss';
+import progress from './progress';
 
 const printSleep = () => {
   const domString = `
@@ -15,13 +16,14 @@ const printSleep = () => {
 const addEnergy = (x) => {
   energy.setEnergy(x);
   printSleep();
+  progress.setProgress();
 };
 
 const sleepListeners = () => {
   document.querySelector('#sleep').addEventListener('click', (e) => {
-    if (e.target.id === 'napButton') { addEnergy(50); }
+    if (e.target.id === 'napButton') { addEnergy(); }
     if (e.target.id === 'sleepButton') { addEnergy(60); }
   });
 };
 
-export default { printSleep, sleepListeners };
+export default { printSleep, sleepListeners, addEnergy };

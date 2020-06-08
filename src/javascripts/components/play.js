@@ -1,6 +1,7 @@
 import fun from '../helpers/data/fun';
 import utils from '../helpers/utils';
 import './play.scss';
+import progress from './progress';
 
 const printPlay = () => {
   const domString = `
@@ -15,12 +16,13 @@ const printPlay = () => {
 const addFunness = (amount) => {
   fun.setFun(amount);
   printPlay();
+  progress.setProgress();
 };
 
 const playListeners = () => {
   document.querySelector('#play').addEventListener('click', (e) => {
-    if (e.target.id === 'snowboard') { addFunness(50); }
-    if (e.target.id === 'hike') { addFunness(2); }
+    if (e.target.id === 'snowboard') { addFunness(utils.randomNum(50)); }
+    if (e.target.id === 'hike') { addFunness(utils.randomNum(2)); }
   });
 };
 
