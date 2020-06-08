@@ -1,6 +1,7 @@
 import full from '../helpers/data/full';
 import utils from '../helpers/utils';
 import './eat.scss';
+import progress from './progress';
 
 const printEat = () => {
   const domString = `
@@ -13,13 +14,15 @@ const printEat = () => {
 };
 
 const addFullness = () => {
-  full.setFull(10);
+  full.setFull(utils.randomNum(10));
   printEat();
+  progress.setProgress();
 };
 
 const subtractFullness = () => {
-  full.setFull(-3);
+  full.setFull(-utils.randomNum(3));
   printEat();
+  progress.setProgress();
 };
 
 const eatListeners = () => {
