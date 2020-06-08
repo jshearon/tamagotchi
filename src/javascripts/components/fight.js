@@ -19,8 +19,8 @@ const addStrength = (x) => {
 
 const fightListeners = () => {
   document.querySelector('#fight').addEventListener('click', (e) => {
-    if (e.target.id === 'flightButton') { addStrength(2); }
-    if (e.target.id === 'fightButton') { addStrength(-10); }
+    if (e.target.id === 'flightButton') { addStrength(utils.randomNum(10)); }
+    if (e.target.id === 'fightButton') { addStrength(-utils.randomNum(10)); }
   });
 };
 
