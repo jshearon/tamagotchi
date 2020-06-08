@@ -21,8 +21,8 @@ const addEnergy = (x) => {
 
 const sleepListeners = () => {
   document.querySelector('#sleep').addEventListener('click', (e) => {
-    if (e.target.id === 'napButton') { addEnergy(); }
-    if (e.target.id === 'sleepButton') { addEnergy(60); }
+    if (e.target.id === 'napButton') { addEnergy(utils.randomNum(50)); }
+    if (e.target.id === 'sleepButton') { addEnergy(utils.randomNum(60)); }
   });
 };
 
