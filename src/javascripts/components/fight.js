@@ -1,6 +1,7 @@
 import strength from '../helpers/data/strength';
 import utils from '../helpers/utils';
 import './fight.scss';
+import progress from './progress';
 
 const printFight = () => {
   const domString = `
@@ -15,6 +16,7 @@ const printFight = () => {
 const addStrength = (x) => {
   strength.setStrength(x);
   printFight();
+  progress.setProgress();
 };
 
 const fightListeners = () => {

@@ -1,6 +1,7 @@
 import energy from '../helpers/data/energy';
 import utils from '../helpers/utils';
 import './sleep.scss';
+import progress from './progress';
 
 const printSleep = () => {
   const domString = `
@@ -15,6 +16,7 @@ const printSleep = () => {
 const addEnergy = (x) => {
   energy.setEnergy(x);
   printSleep();
+  progress.setProgress();
 };
 
 const sleepListeners = () => {
@@ -24,4 +26,4 @@ const sleepListeners = () => {
   });
 };
 
-export default { printSleep, sleepListeners };
+export default { printSleep, sleepListeners, addEnergy };
